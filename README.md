@@ -91,8 +91,18 @@ http://localhost:8080/swagger-ui/index.html
 
 ## 🧪 6. Ejecutar pruebas unitarias
 
-```bash
-./gradlew test
-```
+    ```bash
+    ./gradlew test
+    ```
 
-> Usa `Run with Coverage` en IntelliJ para ver cobertura por clase.
+    Usa `Run with Coverage` en IntelliJ para ver cobertura por clase.
+
+# 🧪 Configuración variables de entorno
+
+   En el archivo application.properties vas a encontrar las siguientes variables : 
+
+  spring.application.name=nisum            --> nombre de la aplicación 
+  email.regex=^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$    ---> expresion que valida el formato del email aceptado
+  password.regex=^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$   ---> expresion que valida el formato de la contraseña aceptada
+  jwt.secret=Gz7$Tr9!XuLq4#FvMk82ZbWyNpQsLdEh  ----> clave de encriptacion para el token generado a cada usuario
+  jwt.expiration=3600000   -----> tiempo que dura vigente el token generado al usuario 
