@@ -12,22 +12,14 @@ IntelliJ, VS Code u otro IDE
 
 🚀 2. Ejecutar la aplicación
 Desde línea de comandos:
-
-bash
-Copiar
 ./gradlew bootRun
 O desde tu IDE, ejecuta la clase:
 
-java
-Copiar
 com.nisum.nisum.NisumApplication
 🌐 3. Acceder a Swagger UI (documentación interactiva)
 Una vez corriendo, abre:
 
-bash
-Copiar
 http://localhost:8080/swagger-ui/index.html
-Si Swagger no está habilitado, puedes probar vía Postman (ver abajo).
 
 📬 4. Probar el endpoint de registro
 Endpoint: POST /user/create
@@ -49,9 +41,8 @@ Copiar
   ]
 }
 📤 Response esperado:
-json
-Copiar
 {
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "name": "Juan Pérez",
   "email": "juan@example.com",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI...",
@@ -61,14 +52,11 @@ Copiar
   "isActive": true
 }
 ❗ 5. Errores esperados
-Situación	Código	Mensaje
 Email ya registrado	400	{"mensaje": "Email ya registrado"}
 Email inválido	400	{"mensaje": "Email inválido"}
 Contraseña no válida	400	{"mensaje": "Contraseña inválida"}
 
 🧪 6. Ejecutar pruebas unitarias
-bash
-Copiar
 ./gradlew test
 Usa Run with Coverage en IntelliJ para ver cobertura por clase.
 
