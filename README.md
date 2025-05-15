@@ -102,9 +102,9 @@ http://localhost:8080/swagger-ui/index.html
    En el archivo application.properties vas a encontrar las siguientes variables : 
    | Variable                   | Valor | Funcion                     |
 |------------------------------|--------|-----------------------------|
-| spring.application.name      | nisum    | `{nombre de la aplicación "}` |
-| email.regex              | ^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$    | `{ "expresión regular que valida el formato del email aceptado"}`     |
-| password.regex         | ^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$    | `{"expresion que valida el formato de la contraseña aceptada"}`|
-| jwt.secret         | Gz7$Tr9!XuLq4#FvMk82ZbWyNpQsLdEh    | `{"clave de encriptación para el token generado a cada usuario"}`|
-| jwt.expiration         | 3600000    | `{"tiempo que dura vigente el token generado al usuario"}`|
+| spring.application.name      | nisum    | `nombre de la aplicación` |
+| email.regex              | ^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$    | `expresión regular que valida el formato del email aceptado`     |
+| password.regex         | ^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$    | `expresion que valida el formato de la contraseña aceptada`|
+| jwt.secret         | Gz7$Tr9!XuLq4#FvMk82ZbWyNpQsLdEh    | `clave de encriptación para el token generado a cada usuario`|
+| jwt.expiration         | 3600000    | `tiempo que dura vigente el token generado al usuario`|
 
